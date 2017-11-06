@@ -1,0 +1,88 @@
+{% extends data.outerLayout %}
+<div class="apos-refreshable" data-apos-refreshable>
+    {% block beforeMain %}
+    <nav class="navbar  navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="/">SĀKUMS</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">PAR SKOLU <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            
+            <li><a href="/par-skolu">Apraksts</a></li>
+            <li><a href="/dokumenti">Dokumenti & Mēneša plāns</a></li>
+            <li><a href="/video">Video</a></li>
+
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">MĀCĪBAS <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/macibu-programma">Mācību programma</a></li>
+            <li><a href="/grafiki">Grafiki,Konsultācijas & Ēdienkarte</a></li>
+            <li><a href="/olimpiades">Olimpiādes</a></li>
+            <li><a href="/petnieciskie-darbi">Pētnieciskie darbi</a></li>
+          </ul>
+        </li>
+             <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ATBALSTS <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Karjera</a></li>
+            <li><a href="#">Interešu izglītība</a></li>
+            <li><a href="#">Motivācijas spēle</a></li>
+            
+          </ul>
+        </li>
+        
+       <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">CILVĒKI <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Skolotāji</a></li>
+            <li><a href="#">Skolēnu dome</a></li>
+            <li><a href="#">Absolventi</a></li>
+          </ul>
+        </li>
+        <li><a href="/galerija">GALERIJA</a></li>
+        <li><a href="/kontakti">KONTAKTI</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+    {% endblock %}
+    {% block main %}
+	    <div class="dzejolis">
+			<p>Te mana skola<br>Laipni ver durvis,<br>Brīnumu sola<br>Kā labais burvis.<br>/D.Grigorjeviča/</p>
+		</div>
+		<div class="apraksts-container">
+			<h3>Mūsu vīzija</h3>
+			<p> Ērgļu vidusskolā ikkatram ir iespējas un katrs gūst panākumus.</p>
+			<h3>Mūsu vērtības</h3>
+			<p><b>Cieņa</b> ir mūsu attiecību stabilais pamats.</p>
+			<p><b>Mērķtiecība</b> ir mūsu izaugsme.</p>	
+			<p><b>Sadarbība</b> ir labs komandas darbs.</p>
+			<p><b>Ērgļu vidusskola ir Ērgļu novada vispārējās izglītības iestāde, kas nodrošina kvalitatīvu pamatizglītību un vispārējo vidējo izglītību un personības attīstības iespējas ikvienam, kurš mācās.</b></p>
+			<h3>Prioritāte: Mācīšanās ikviena sasniegumiem.</h3>
+			<p><b>Mērķis: </b> Skolēni saprot un mērķtiecīgi izmanto mācību priekšmetu saikni stundās, projektos un pētnieciskajos darbos, prot strādāt ar informāciju, kritiski un radoši domāt, sadarboties.</p>
+			<h3>Prioritāte: Personības izaugsme –  mērķtiecība un sadarbības prasmes.</h3>
+			<p><b>Mērķis: </b>Ikviens skolēns saņem atbalstu–
+
+		īpašo spēju attīstībai un mācīšanās problēmu risināšanai,
+		karjeras izglītībai,
+		līdzdarbībai motivācijas spēlē “Izkrāso IKdienu”.</p>
+		<h3>Prioritāte: Mūsdienīga mācību vide.</h3>
+		<p><b>Mērķis: </b>Risinājums sākumskolas un vidusskolas telpu apvienošanai zem viena jumta.</p>
+		</div>
+    {% endblock %}
+    {% block afterMain %}{% endblock %}
+</div>

@@ -1,0 +1,33 @@
+{#
+  An empty global layout to be extended by your page templates. This file extends
+  Apostrophe's outerLayoutBase template, which we don't recommend overriding, unless
+  you're a pro!
+#}
+
+{% extends "outerLayoutBase.html" %}
+
+{% block title %}Apostrophe Boilerplate{% endblock %}
+
+{% block extraHead %}
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="./apostrophe-assets/public/css/site.less">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+{% endblock %}
+
+{% block beforeMain %}
+  
+    
+  
+{% endblock %}
+
+{% block main %}
+ 	
+{% endblock %}
+
+{% block afterMain %}
+  {#
+    This would be a great place to put a footer.
+  #}
+{% endblock %}

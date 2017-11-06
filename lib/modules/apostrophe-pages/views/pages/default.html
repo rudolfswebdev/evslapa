@@ -1,0 +1,86 @@
+{% extends data.outerLayout %}
+<div class="apos-refreshable" data-apos-refreshable>
+	{% block beforeMain %}
+  <nav class="navbar  navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="/">SĀKUMS</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">PAR SKOLU <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            
+            <li><a href="/par-skolu">Apraksts</a></li>
+            <li><a href="/dokumenti">Dokumenti & Mēneša plāns</a></li>
+            <li><a href="/video">Video</a></li>
+
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">MĀCĪBAS <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/macibu-programma">Mācību programma</a></li>
+            <li><a href="/grafiki">Grafiki,Konsultācijas & Ēdienkarte</a></li>
+            <li><a href="/olimpiades">Olimpiādes</a></li>
+            <li><a href="/petnieciskie-darbi">Pētnieciskie darbi</a></li>
+          </ul>
+        </li>
+             <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ATBALSTS <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Karjera</a></li>
+            <li><a href="#">Interešu izglītība</a></li>
+            <li><a href="#">Motivācijas spēle</a></li>
+            
+          </ul>
+        </li>
+        
+       <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">CILVĒKI <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Skolotāji</a></li>
+            <li><a href="#">Skolēnu dome</a></li>
+            <li><a href="#">Absolventi</a></li>
+          </ul>
+        </li>
+        <li><a href="/galerija">GALERIJA</a></li>
+        <li><a href="/kontakti">KONTAKTI</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+	{% endblock %}
+    {% block main %}
+    <div class="main">
+    	{{ apos.area(data.page, 'body', {
+      widgets: {
+        'apostrophe-images': {
+          size: 'full',
+        noHeight: true,
+        aspectRatio: [ 2, 1 ],
+        },
+        'apostrophe-rich-text': {
+          toolbar: [ 'Styles', 'Bold', 'Italic', 'Link', 'Unlink' ],
+          styles: [
+            { name: 'Heading', element: 'h3' },
+            { name: 'Subheading', element: 'h4' },
+            { name: 'Paragraph', element: 'p' }
+          ]
+        }
+      }
+    }) }}
+    
+	</div>
+    {% endblock %}
+    {% block afterMain %}{% endblock %}
+</div>

@@ -1,0 +1,201 @@
+@import "utils/reset.less";
+body { background-color: @apos-light; }
+
+@font-face {
+ font-family: "raleway";
+  src: url('/fonts/Raleway-Regular.ttf');      
+}
+
+//Sākuma lapas CSS
+.content{
+  width: 100%;
+  height: 100%;
+  text-align: center;
+
+  .hero-image{
+  box-shadow:inset 0 0 0 2000px rgba(0,0,0,0.3);
+
+  height:95vh;
+  padding-top:20vh;
+    background-image: url('https://i.imgur.com/cM4eeGP.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  }
+
+  h1,h2{
+    font-family: 'raleway', sans-serif;
+    color: white;
+    font-weight: bold;
+  }
+  h1{
+  font-size: 9vw;
+  }
+  h2{
+  font-size: 4vw;
+  }
+}
+
+.main{
+  padding-top: 5%;
+  padding-left: 25%;
+  padding-right: 25%;
+  text-align: center;
+
+  @media only screen and(max-device-width : 720px) {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  
+  h3{
+    font-size: 2vw;
+    color:limegreen;
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-family: 'raleway', sans-serif;
+      @media only screen and(max-device-width : 720px) {
+        font-size: 3vw;
+      }
+  }
+
+  p
+  {
+    font-size: 1vw;
+    font-family: 'raleway', sans-serif;
+    margin-bottom: 5%;
+
+    @media only screen and(max-device-width : 720px) {
+      font-size: 2vw;
+    }
+  
+  }
+  strong { font-weight: bold; }
+  em { font-style: italic; }
+}
+//kontaktu sadaļas CSS
+.kontakti-container
+{
+
+  margin-top: 5%;
+  text-align: center;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'raleway', sans-serif;
+  a{
+      text-decoration: none; 
+      font-size: 2em;
+      color:limegreen;
+      text-transform: uppercase;
+      font-weight: bold;
+      margin-top: 10px;
+      margin-bottom: 10px;
+  }
+  a:hover{
+    color: limegreen;
+    text-decoration: none; 
+  }
+  h3
+  {
+    font-size: 2em;
+    color:limegreen;
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+  p
+  {
+    font-size: 1em;
+    margin-bottom: 10px;
+  }
+}
+//apraksta sadaļas CSS
+.apraksts-container{
+  font-family: 'raleway', sans-serif;
+width:70%;
+padding-left: 10%;
+padding-right: 10%;
+margin-top: 15vh;
+margin-bottom: 15vh;
+}
+h3{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color:limegreen;
+  font-size: 2em;
+  font-weight: bold;
+}
+p{
+  font-size: 1em;
+  margin-bottom: 5px;
+}
+.dzejolis{
+  margin-top: 5%;
+  font-family: 'raleway',sans-serif;
+  text-align: center;
+  padding-right: 0;
+  p{
+  font-size: 1.5em;
+}
+}
+.video-container{
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 100px;
+  text-align: center;
+   h3{
+    font-size: 2vw;
+    color:limegreen;
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-family: 'raleway', sans-serif;
+      @media only screen and(max-device-width : 720px) {
+        font-size: 3vw;
+      }
+  }
+  
+}
+.video-container .apos-area-widget-wrapper{
+  margin-bottom: 30px;
+}
+//navigacijas css
+
+nav{
+  padding-bottom: 0;
+  position: relative;
+  font-family: 'raleway',sans-serif;
+  margin-bottom: 0;
+
+}
+
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+}
+
+.navbar .navbar-collapse {
+    text-align: center;
+}
+
+li{
+  font-size: 20px;
+
+
+}
+
+li:hover{
+  border-bottom: 3px solid #0bba19;
+    transition: all 0.10s ease-in-out;
+    margin-bottom: -3px;
+
+}
+
+ul.nav li a:hover, ul.nav li a:active {
+    color: #0bba19 !important;
+}
+
+.apos-slideshow-item
+{
+  background-size: cover;
+  max-width: 100%;
+  height: 50vh;
+}
