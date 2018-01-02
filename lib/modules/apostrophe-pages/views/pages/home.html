@@ -49,9 +49,9 @@
              <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ATBALSTS <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#">Karjera</a></li>
-            <li><a href="#">Interešu izglītība</a></li>
-            <li><a href="#">Motivācijas spēle</a></li>
+            <li><a href="/karjera">Karjera</a></li>
+            <li><a href="/interesu-izglitiba">Interešu izglītība</a></li>
+            <li><a href="/motivacijas-spele">Motivācijas spēle</a></li>
             
           </ul>
         </li>
@@ -59,9 +59,9 @@
        <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">CILVĒKI <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#">Skolotāji</a></li>
-            <li><a href="#">Skolēnu dome</a></li>
-            <li><a href="#">Absolventi</a></li>
+            <li><a href="/skolotaji">Skolotāji</a></li>
+            <li><a href="/skolenu-dome">Skolēnu dome</a></li>
+            <li><a href="/absolventi">Absolventi</a></li>
           </ul>
         </li>
         <li><a href="/galerija">GALERIJA</a></li>
@@ -74,19 +74,34 @@
     <h1>ĒRGĻU VIDUSSKOLA</h1>
     <h2>Iespējas & panākumi ikvienam</h2>
   </div>
-  <div class="main">
-    {{ apos.area(data.page, 'body', {
-      widgets: {
-        'apostrophe-rich-text': {
-          toolbar: [ 'Styles', 'Bold', 'Italic', 'Link', 'Unlink' ],
-          styles: [
-            { name: 'Heading', element: 'h3' },
-            { name: 'Subheading', element: 'h4' },
-            { name: 'Paragraph', element: 'p' }
-          ]
-        }
-      }
-    }) }}
-</div
+ 
+    <div class="row">
+  <div class="first col-sm-6">
+    <h2><a routerLink="/apraksts">PAR SKOLU</a></h2>
+  </div>
+  <div class="first col-sm-6">
+    <h2><a href="/macibu-programma">MĀCĪBAS</a></h2>
+  </div>
+</div>
+<div class="row">
+  <div class="second col-sm-4">
+    <h2><a href="/karjera">ATBALSTS</a></h2>
+  </div>
+  <div class="second col-sm-4">
+    <h2><a href="/skoleni">CILVĒKI</a></h2>
+  </div>
+  <div class="second col-sm-4">
+    <h2><a href="/galerija">GALERIJA</a></h2>
+  </div>
+</div>
+<div class="row">
+  <div class="third col-sm-6">
+    <h2><a href="/motivacijas-spele">MOTIVĀCIJA</a></h2>
+  </div>
+  <div class="third col-sm-6">
+    <h2><a href="/kontakti">KONTAKTI</a></h2>
+  </div>
+</div>
+
 {% endblock %}  
 

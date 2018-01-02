@@ -5,7 +5,9 @@ body { background-color: @apos-light; }
  font-family: "raleway";
   src: url('/fonts/Raleway-Regular.ttf');      
 }
-
+.apos-slideshow .apos-slideshow-item h4{
+  display: none;
+}
 //Sākuma lapas CSS
 .content{
   width: 100%;
@@ -198,4 +200,102 @@ ul.nav li a:hover, ul.nav li a:active {
   background-size: cover;
   max-width: 100%;
   height: 50vh;
+}
+
+//sākumlapas sadaļu css
+
+.row{
+  margin:0;
+  text-align: center;
+  
+}
+.first{
+  display:flex;
+    align-items: center;
+    justify-content: center;
+  height: 35vh;
+  background-color: green;
+  margin-bottom: 2px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.second{
+  display:flex;
+    align-items: center;
+    justify-content: center;
+  height: 35vh;
+  background-color: blue;
+  margin-bottom: 2px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.third{
+  display:flex;
+    align-items: center;
+    justify-content: center;
+  height:35vh;
+  background-color: lime;
+  margin-bottom: 2px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.first:nth-child(1){
+  box-shadow:inset 0 0 0 2000px rgba(255,0,15,0.2);
+  background-image: url('https://i.imgur.com/2TyRSdK.jpg');
+  padding-right: 1px;
+  
+}
+.first:nth-child(2){
+  box-shadow:inset 0 0 0 2000px rgba(64,255,0,0.2);
+  background-image: url('https://i.imgur.com/lNUim0m.jpg');
+  padding-left: 1px;
+}
+.second:nth-child(1){
+  box-shadow:inset 0 0 0 2000px rgba(50,100,10,0.2);
+  background-image: url('https://i.imgur.com/1Ylc4lr.jpg');
+  
+}
+.second:nth-child(2){
+  box-shadow:inset 0 0 0 2000px rgba(75,4,255,0.2);
+  background-image: url('https://i.imgur.com/DBK5urU.jpg');
+
+}
+.second:nth-child(3){
+  box-shadow:inset 0 0 0 2000px rgba(255,0,15,0.2);
+  background-image: url('https://i.imgur.com/DNWBA1B.jpg');
+}
+.third:nth-child(1){
+  box-shadow:inset 0 0 0 2000px rgba(50,100,10,0.2);
+  background-image: url('https://i.imgur.com/t8KcnEm.jpg');
+}
+.third:nth-child(2){
+  box-shadow:inset 0 0 0 2000px rgba(75,4,255,0.2);
+  background-image: url('https://i.imgur.com/pkpqOv5.jpg');
+}
+.row a{
+  text-decoration: none;
+}
+.row h2{
+  color: white;
+
+  h2:after {
+  display:block;
+  content: '';
+  border-bottom: solid 3px #0bba19;  
+  transform: scaleX(0);  
+  transition: transform 250ms ease-in-out;
+}
+
+h2:hover:after { transform: scaleX(1); }
+
+h2:hover{
+  -webkit-transition: all 0.3s ease;
+-moz-transition: all 0.3s ease;
+-o-transition: all 0.3s ease;
+-ms-transition: all 0.3s ease;
+  font-size:2.5em;
+}
 }
